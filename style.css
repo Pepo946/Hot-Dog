@@ -1,0 +1,66 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffcc00;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: rotate(2deg);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-2deg);
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #ff5500;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sus-text {
+    font-size: 1.5rem;
+    color: #ff5500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.fun-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #ff5500;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.fun-button:hover {
+    background-color: #ff7700;
+    transform: scale(1.05);
+}
